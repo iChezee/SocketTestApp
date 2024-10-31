@@ -138,8 +138,12 @@ private extension MainViewViewModel {
     func createPingTask() {
         pingTask = Task(priority: .background) {
             while(true) {
-                await Task.sleep(5)
-                socketService?.sendPing(Data())
+                do {
+                    try await Task.sleep(5_000_000_000)
+                    socketService?.sendPing(Data())
+                } catch {
+                    print(error)
+                }
             }
         }
     }

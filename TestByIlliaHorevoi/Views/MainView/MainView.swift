@@ -5,13 +5,14 @@ import Database
 import Charts
 
 struct MainView: View {
-    @EnvironmentObject var apiService: APIService
+    @ObservedObject var apiService: APIService
     @ObservedObject var viewModel: MainViewViewModel
     @Environment(\.modelContext) var context
     @Environment(\.dismiss) var dismiss
     
     init(_ apiService: APIService) {
         viewModel = MainViewViewModel(apiService)
+        self.apiService = apiService
     }
     
     var body: some View {

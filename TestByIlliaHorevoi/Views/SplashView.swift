@@ -30,9 +30,9 @@ struct SplashView: View {
         .navigationDestination(item: $navigateNext) { value in
             if value {
                 MainView(apiService)
-                    .environmentObject(apiService)
             } else {
                 LoginView()
+                    .environmentObject(apiService)
             }
         }
     }
