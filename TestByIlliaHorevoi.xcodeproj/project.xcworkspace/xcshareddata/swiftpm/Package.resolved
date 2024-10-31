@@ -1,0 +1,24 @@
+{
+  "originHash" : "6c4675b88cdec7b58a8ccfb16dc0b30890adee6dea647e12d2650a9cb32032e5",
+  "pins" : [
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
+        "version" : "509.1.1"
+      }
+    },
+    {
+      "identity" : "swiftynetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/piotrekjeremicz/SwiftyNetworking",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1f6229b42e70590d8d51f819a08e83bd80950e14"
+      }
+    }
+  ],
+  "version" : 3
+}
