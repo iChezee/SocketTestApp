@@ -20,7 +20,7 @@ struct MainView: View {
             search
             if viewModel.showChooseInstrument {
                 dropdown
-            } else {
+            } else if viewModel.selectedInstrument != nil {
                 lastBidInfo
                 priceChart
             }
